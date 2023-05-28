@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+@font-face {
+  font-family: lato;
+  src: url("./public/fonts/Lato-Light.ttf");
+}
+@font-face {
+  font-family: prillyMonly;
+  src: url("./public/fonts/Prilly\ Monly.ttf");
+}
+
+@font-face {
+  font-family: venus;
+  src: url("./public/fonts/Venus\ Plant.ttf");
+}
+
+@font-face {
+  font-family: socialFont;
+  src: url("./public/fonts/SocialType.ttf");
+}
+
+:root {
+  --primary-color: #00f1ea;
+  --secondary-color: #6c757d;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.social {
+  font-family: socialFont;
+  color: rgb(202, 202, 202);
+}
+
+.btn {
+  margin: 5px;
+  padding: 10px;
+  background: linear-gradient(to left, var(--primary-color), #09a2cf);
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: linear 0.2s;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: none;
+  border: 2px solid var(--primary-color);
+  color: white;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+
+.item {
+  text-align: center;
+  font-size: 24px;
+}
+
+/* header styles */
+
+.header {
+  grid-row: 1;
+  grid-column: 1 / span 4;
+  background-image: url("./public/imgs/misc/pexels-pavel-danilyuk-8438944.jpg");
+  background-size: cover;
+  color: #ddd;
+  height: 100vh;
+}
+
+.brand {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-align: left;
+  margin: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.brand > img {
+  width: 50px;
+}
+
+.hero {
+  margin-top: 25vh;
+}
+
+.hero > .title {
+  font-size: 40px;
+  color: var(--primary-color);
+  font-family: venus;
+}
+
+.subtitle {
+  font-family: "Poppins";
+  font-size: small;
+  font-weight: 400;
+  margin: 10px 0 30px 0;
+}
+
+.hero-button {
+  width: 100px;
+  background-repeat: no-repeat;
+}
+.hero-button:hover {
+  animation: fillIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fillIn {
+  0% {
+    background-size: 0%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+/* speakers styles */
+.speakers-section {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.speakers-section img {
+  width: 150px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+}
+.speaker {
+  margin: 50px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: linear 0.2s;
+}
+.speaker:hover {
+  transform: scale(1.05);
+}
+.speaker-bio {
+  font-family: lato;
+  font-size: 15px;
+}
+
+.speaker-name {
+  font-family: prillyMonly;
+}
+
+/* Registeration  */
+
+.registeration {
+  grid-row: 3;
+  grid-column: 1 / span 2;
+  margin: 20px;
+}
+
+.registeration > p {
+  font-size: large;
+  text-align: center;
+  margin: 20px;
+  font-family: "Poppins";
+  font-weight: 700;
+}
+.form-container {
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 100%;
+}
+input:focus {
+  outline: none;
+}
+button[type="submit"] {
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  color: #171717;
+}
+
+/* sidebar */
+.sidebar {
+  margin: 50px 20px 0 20px;
+}
+
+.schedule-table {
+  border-collapse: collapse;
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.schedule-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.schedule-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* footer styles */
+
+.footer {
+  grid-row: 4;
+  grid-column: 1 / span 2;
+  background-color: #262729;
+  padding-bottom: 20px;
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-logo {
+  margin: 40px;
+}
+
+.footer-logo > p {
+  color: #00f1ea;
+  font-family: venus;
+}
+
+.partners-list > img {
+  width: 50px;
+  margin: 0 10px 0 10px;
+}
+
+.partners-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.partners {
+  color: rgba(255, 255, 255, 0.744);
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-socials > P {
+  margin: 0 5px 0 5px;
+  font-size: larger;
+  transition: transform 0.2s linear;
+}
+.footer-socials > P:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+
+/* modal */
+.modal {
+  background: rgb(233, 233, 233);
+  padding: 40px;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  width: 30%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: none;
+}
+
+.modal > h1 {
+  text-align: center;
+}
+#modalUsername {
+  color: #09a2cf;
+}
+.thanks {
+  font-size: medium;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(23, 23, 23, 0.4);
+  overflow: auto;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+
+/* media queries */
+@media (max-width: 900px) {
+  .form-container {
+    width: 600px;
+  }
+}
+
+@keyframes move {
+  0% {
+    left: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .speakers-section img {
+    width: 100px;
+  }
+  .speakers-section {
+    grid-row: 3;
+    grid-column: 1 / span 2;
+  }
+  .sidebar {
+    grid-row: 2;
+    grid-column: 1 / span 2;
+  }
+  .registeration {
+    grid-row: 4;
+  }
+  .footer {
+    grid-row: 5;
+  }
+}
+
+@media (max-width: 900px) {
+  .form-container {
+    width: 400px;
+  }
+}
+
+@media (max-width: 700px) {
+  .modal {
+    width: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero .title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 470px) {
+  .hero .title {
+    font-size: 20px;
+  }
+  .form-container {
+    width: 300px;
+  }
+  .modal {
+    width: 50%;
+  }
+  .footer-top {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+}

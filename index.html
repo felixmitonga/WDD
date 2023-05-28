@@ -1,42 +1,159 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title># The Furure is Now
-    ## School of Media and IT Mini Conference in AI
-    ### 26.5.2023 9:00am – 18:00pm</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-  <header>
-    <!-- Header content goes here -->
-  </header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="grid-container app">
+      <section class="item header">
+        <nav class="brand">
+          <img src="./public/imgs/misc/logo.png" alt="" />
+          <span>AI-CONF</span>
+          <span>.</span>
+        </nav>
+        <div class="hero">
+          <p class="title">The Future is now</p>
+          <p class="subtitle">School of Media and IT Mini Conference in AI</p>
+          <a href="#register">
+            <button class="btn hero-button">Register</button></a
+          >
+        </div>
+      </section>
+      <div class="item speakers-section">
+        <div class="speaker">
+          <img
+            src="./public/imgs/speakers/pexels-nichole-sebastian-3220360.jpg"
+            alt="Speaker"
+          />
+          <div class="speaker-info">
+            <h3 class="speaker-name">Sarah Chen</h3>
+            <p class="speaker-bio">
+              AI Ethics Researcher at the Brookings Institution - Expertise in
+              the ethical implications of AI and developing guidelines for
+              responsible AI development.
+            </p>
+          </div>
+        </div>
+        <div class="speaker">
+          <img
+            src="./public/imgs/speakers/pexels-pixabay-220453.jpg"
+            alt="Speaker"
+          />
+          <div class="speaker-info">
+            <h3 class="speaker-name">Mike Johnson,</h3>
+            <p class="speaker-bio">
+              AI Strategy Consultant at a consulting firm - Expertise in
+              advisingorganizations on how to develop and implement AI
+              strategies to improve business operations and drive growth.
+            </p>
+          </div>
+        </div>
+      </div>
 
-  <main>
-    <section id="description">
-      <!-- Description content goes here -->
-    </section>
+      <section id="sidebar" class="item sidebar">
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Event</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>9:00 AM</td>
+              <td>Registration & Check-in</td>
+              <td>Conference Hall</td>
+            </tr>
+            <tr>
+              <td>10:00 AM</td>
+              <td>Welcome & Opening Remarks</td>
+              <td>Conference Hall</td>
+            </tr>
+            <tr>
+              <td>11:00 AM</td>
+              <td>Keynote Speaker</td>
+              <td>Conference Hall</td>
+            </tr>
+            <tr>
+              <td>12:00 PM</td>
+              <td>Lunch</td>
+              <td>Ballroom</td>
+            </tr>
+            <tr>
+              <td>1:00 PM</td>
+              <td>Panel Discussion</td>
+              <td>Conference Hall</td>
+            </tr>
+            <tr>
+              <td>2:30 PM</td>
+              <td>Breakout Sessions</td>
+              <td>Various Rooms</td>
+            </tr>
+            <tr>
+              <td>4:00 PM</td>
+              <td>Closing Remarks & Networking</td>
+              <td>Conference Hall</td>
+            </tr>
+          </tbody>
+        </table>
 
-    <section id="registration">
-      <!-- Registration content goes here -->
-    </section>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202845.2009657326!2d-122.20590816427269!3d37.40268917483271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb68ad0cfc739%3A0x7eb356b66bd4b50e!2sSilicon%20Valley%2C%20CA%2C%20USA!5e0!3m2!1sen!2snl!4v1685274047639!5m2!1sen!2snl"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+      <section id="register" class="registeration">
+        <p>Register</p>
+        <div class="form-container">
+          <form class="contact-form" id="registerForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
 
-    <section id="location">
-      <!-- Location content goes here -->
-    </section>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <button class="btn" id="submitBtn" type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+      <footer class="item footer">
+        <div class="footer-top">
+          <div class="footer-logo">
+            <img src="./public/imgs/misc/logo.png" />
+          </div>
+          <div class="partners">
+            <p>Partners</p>
+            <div class="partners-list">
+              <img src="./public/imgs/partners/openai.png" />
+              <img src="./public/imgs/partners/meta.png" />
+              <img src="./public/imgs/partners/apple.png" />
+            </div>
+          </div>
+        </div>
+        <div class="footer-socials">
+          <p class="social">B</p>
+          <p class="social">F</p>
+          <p class="social">A</p>
+        </div>
+      </footer>
+    </div>
 
-    <section id="timetable">
-      <!-- Timetable content goes here -->
-    </section>
+    <div class="backdrop" id="backdrop"></div>
+    <div id="modal" class="modal">
+      <h1 id="modalUsername">Henok</h1>
+      <h1 class="thanks">Thanks for Registering</h1>
+      <button class="btn" id="closeBtn" type="submit">okay</button>
+    </div>
 
-    <section id="speakers">
-      <!-- Speakers content goes here -->
-    </section>
-  </main>
-
-  <footer>
-    <!-- Footer content goes here -->
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script src="./main.js"></script>
+  </body>
 </html>
