@@ -191,13 +191,13 @@ button[type="submit"]:hover {
 
 /* Registeration  */
 
-.registration {
+.registeration {
   grid-row: 3;
   grid-column: 1 / span 3;
   margin: 2rem;
 }
 
-.registration > p {
+.registeration > p {
   font-size: large;
   text-align: center;
   margin: 2rem;
@@ -292,7 +292,7 @@ button[type="submit"]:hover {
 .footer-top {
   display: flex;
   align-items: center;
-  justify-content:space-around;
+  justify-content: center;
 }
 .footer-logo {
   margin: 4rem;
