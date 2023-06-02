@@ -5,7 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>AI Conference</title>
+    <title>The Future is now</title>
+    <link rel="shortcut icon" href="./public/imgs/misc/logo.png" type="image/x-icon"/>
   </head>
   <body>
     <div class="grid-container app">
@@ -15,33 +16,89 @@
           <span>AI-CONF</span>
           <span>.</span>
         </nav>
-       <div class="hero">
+        <div class="hero">
           <p class="title">The Future is now</p>
           <p class="subtitle">School of Media and IT Mini Conference in AI</p>
-          <a href="#register">
-            <button class="btn hero-button">Register</button></a>
-       </div>
+          <a href="#register"> <button class="btn hero-button">Register</button></a>
+        </div>
       </section>
+
       <div class="item speakers-section">
-        <div class="speaker">
-          <img src="./public/imgs/speakers/pexels-nichole-sebastian-3220360.jpg" alt="Speaker"/>
-         <div class="speaker-info">
-            <h3 class="speaker-name">Sarah Chen</h3>
+        <p class="speakers-title">The Conference</p>
+        <p class="speakers-topics">
+          Explore the diverse applications of AI, the challenges and
+          opportunities that come with its development, and how it can be
+          leveraged to make a positive impact on society. We look forward to
+          engaging in meaningful conversations that will further the progress of
+          AI and its potential to shape the future.
+        </p>
+        <div class="speaker" onclick="showInfo('speakerOneInfo')">
+          <div class="speaker-top">
+            <img src="./public/imgs/speakers/speaker (1).jpg" alt="Speaker" />
+            <p class="speaker-name">Jennifer Williams</p>
+          </div>
+          <div id="speakerOneInfo" class="speaker-info">
             <p class="speaker-bio">
-              AI Ethics Researcher at the Brookings Institution - Expertise in
-              the ethical implications of AI and developing guidelines for
-              responsible AI development.
+              AI Researcher and Scientist Jennifer Williams is a leading AI
+              researcher and scientist who specializes in machine learning and
+              data mining. She has published several papers on these topics and
+              has won numerous awards for her contributions to the field.
             </p>
           </div>
         </div>
-        <div class="speaker">
-          <img src="./public/imgs/speakers/pexels-pixabay-220453.jpg" alt="Speaker"/>
-          <div class="speaker-info">
-            <h3 class="speaker-name">Mike Johnson,</h3>
+        <div class="speaker" onclick="showInfo('speakerTwoInfo')">
+          <div class="speaker-top">
+            <img src="./public/imgs/speakers/speaker (2).jpg" alt="Speaker" />
+            <p class="speaker-name">Andrew Smith</p>
+          </div>
+          <div id="speakerTwoInfo" class="speaker-info">
             <p class="speaker-bio">
-              AI Strategy Consultant at a consulting firm - Expertise in
-              advisingorganizations on how to develop and implement AI
-              strategies to improve business operations and drive growth.
+              An AI ethics expert who focuses on the responsible development and
+              deployment of AI systems. He has advised several organizations on
+              how to mitigate potential risks associated with AI and has written
+              extensively on the topic.
+            </p>
+          </div>
+        </div>
+        <div class="speaker" onclick="showInfo('speakerThreeInfo')">
+          <div class="speaker-top">
+            <img src="./public/imgs/speakers/speaker (3).jpg" alt="Speaker" />
+            <p class="speaker-name">Sarah Johnson</p>
+          </div>
+          <div id="speakerThreeInfo" class="speaker-info">
+            <p class="speaker-bio">
+              Sarah Johnson is an AI developer who specializes in natural
+              language processing and machine learning. She has developed
+              several successful AI applications and is known for her ability to
+              write efficient and scalable code.
+            </p>
+          </div>
+        </div>
+        <div class="speaker" onclick="showInfo('speakerFourInfo')">
+          <div class="speaker-top">
+            <img src="./public/imgs/speakers/speaker (4).jpg" alt="Speaker" />
+            <p class="speaker-name">Mark Anderson</p>
+          </div>
+          <div id="speakerFourInfo" class="speaker-info">
+            <p class="speaker-bio">
+              Mark Andersonis an AI researcher who focuses on the intersection
+              of AI and healthcare. She has developed several AI-powered
+              diagnostic tools and has conducted extensive research on the
+              ethical implications of AI in healthcare.
+            </p>
+          </div>
+        </div>
+        <div class="speaker" onclick="showInfo('speakerFiveInfo')">
+          <div class="speaker-top">
+            <img src="./public/imgs/speakers/pexels-ichad-windhiagiri-3988680.jpg" alt="Speaker"/>
+            <p class="speaker-name">Rebecca Jones</p>
+          </div>
+          <div id="speakerFiveInfo" class="speaker-info">
+            <p class="speaker-bio">
+              Rebecca Jones is an AI product manager who has led the development
+              of several successful AI-powered products. He has a keen
+              understanding of how to translate technical concepts into business
+              value and has a track record of delivering innovative solutions.
             </p>
           </div>
         </div>
@@ -59,51 +116,72 @@
           <tbody>
             <tr>
               <td>8:00am - 9:00am</td>
-              <td>Doors Open & Registration</td>
+              <td>Doors open and registration</td>
               <td>Conference Hall</td>
             </tr>
             <tr>
-              <td>10:00 AM</td>
-              <td>Welcome & Opening Remarks</td>
+              <td>9:00am - 9:30am</td>
+              <td>Opening remarks</td>
               <td>Conference Hall</td>
             </tr>
             <tr>
-              <td>11:00 AM</td>
-              <td>Keynote Speaker</td>
+              <td>9:30am - 10:30am</td>
+              <td>Mark Anderson: Introduction to AI</td>
               <td>Conference Hall</td>
             </tr>
             <tr>
-              <td>12:00 PM</td>
+              <td>10:30am - 11:30am</td>
+              <td>Sarah Johnson: AI Applications in Healthcare</td>
+              <td>Conference Hall</td>
+            </tr>
+            <tr>
+              <td>11:30am - 12:30pm</td>
+              <td>Workshop 1: Developing AI Algorithms</td>
+              <td>Conference Hall</td>
+            </tr>
+            <tr>
+              <td>12:30pm - 1:30pm</td>
               <td>Lunch</td>
-              <td>Ballroom</td>
-            </tr>
-            <tr>
-              <td>1:00 PM</td>
-              <td>Panel Discussion</td>
               <td>Conference Hall</td>
             </tr>
             <tr>
-              <td>2:30 PM</td>
-              <td>Breakout Sessions</td>
-              <td>Various Rooms</td>
+              <td>1:30pm - 2:30pm</td>
+              <td>Jennifer Williams: Machine Learning</td>
+              <td>Conference Hall</td>
             </tr>
             <tr>
-              <td>4:00 PM</td>
-              <td>Closing Remarks & Networking</td>
+              <td>2:30pm - 3:30pm</td>
+              <td>Andrew Smith: Natural Language Processing</td>
+              <td>Conference Hall</td>
+            </tr>
+            <tr>
+              <td>3:30pm - 4:30pm</td>
+              <td>Workshop 2: Implementing AI in Business</td>
+              <td>Conference Hall</td>
+            </tr>
+            <tr>
+              <td>4:30pm - 5:30pm</td>
+              <td>Rebecca Jones: AI and the Future</td>
+              <td>Conference Hall</td>
+            </tr>
+            <tr>
+              <td>5:30pm - 6:00pm</td>
+              <td>Closing remarks and networking</td>
               <td>Conference Hall</td>
             </tr>
           </tbody>
         </table>
 
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202845.2009657326!2d-122.20590816427269!3d37.40268917483271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb68ad0cfc739%3A0x7eb356b66bd4b50e!2sSilicon%20Valley%2C%20CA%2C%20USA!5e0!3m2!1sen!2snl!4v1685274047639!5m2!1sen!2snl"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.965084647972!2d14.431259276346282!3d50.086940571525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94900227e7c7%3A0x72a8f977693ca34c!2sPrague%20City%20University!5e0!3m2!1sen!2snl!4v1685318318924!5m2!1sen!2snl"
           width="400"
           height="300"
+          class="map"
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
       <section id="register" class="registration">
         <p>Register</p>
@@ -133,9 +211,12 @@
           </div>
         </div>
         <div class="footer-socials">
-          <p class="social">B</p>
-          <p class="social">F</p>
-          <p class="social">A</p>
+          <a href="https://www.facebook.com/PragueCityUniversity"><p class="social">B</p></a>
+          <a href="https://www.youtube.com/channel/UCtJM41jXN0JSVFM2pxuAzGw"><p class="social">F</p></a>
+          <a href="https://twitter.com/PragueCityUni"><p class="social">A</p></a>
+          <a href="https://www.instagram.com/praguecityuniversity/"><p class="social">V</p></a>
+          <a href="https://www.linkedin.com/school/prague-city-university/"><p class="social">D</p></a>
+          <a href="https://www.flickr.com/photos/praguecityuniversity/albums"><p class="social">O</p></a>
         </div>
       </footer>
     </div>

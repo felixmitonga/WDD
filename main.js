@@ -17,3 +17,25 @@ closeBtn.addEventListener("click", (e) => {
   modal.style.display = "none";
   backdrop.style.display = "none";
 });
+
+const speakerOneInfo = document.getElementById("speakerOneInfo");
+const speakerTwoInfo = document.getElementById("speakerTwoInfo");
+const speakerThreeInfo = document.getElementById("speakerThreeInfo");
+const speakerFourInfo = document.getElementById("speakerFourInfo");
+const speakerFiveInfo = document.getElementById("speakerFiveInfo");
+
+const speakers = {
+  speakerOneInfo,
+  speakerTwoInfo,
+  speakerThreeInfo,
+  speakerFourInfo,
+  speakerFiveInfo,
+};
+
+const showInfo = (speaker) => {
+  if (speakers[speaker].style.display == "block") {
+    speakers[speaker].style.display = "none";
+  } else {
+    speakers[speaker].style.display = "block";
+  }
+};
